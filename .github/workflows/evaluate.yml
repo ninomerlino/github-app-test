@@ -41,7 +41,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: tests
-        path: artifacts/tests.txt
+        path: $GITHUB_WORKSPACE/artifacts/test.txt
 
   lint:
 
@@ -71,4 +71,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: tests
-        path: artifacts/tests.txt
+        path: $GITHUB_WORKSPACE/artifacts/analisys.txt

@@ -38,10 +38,10 @@ jobs:
       run: |
         python my_test_suit.py > tests.txt
     - name: Archive test artifaccts
-        uses: actions/upload-artifact@v2
-        with:
-          name: tests
-          path: artifacts/tests.txt
+      uses: actions/upload-artifact@v2
+      with:
+        name: tests
+        path: artifacts/tests.txt
 
   lint:
 
@@ -68,7 +68,7 @@ jobs:
       run: |
         python my_test_suit.py
     - name: Archive test artifaccts
-        uses: actions/upload-artifact@v2
-        with:
-          name: tests
-          path: artifacts/tests.txt
+      uses: actions/upload-artifact@v2
+      with:
+        name: tests
+        path: artifacts/tests.txt
